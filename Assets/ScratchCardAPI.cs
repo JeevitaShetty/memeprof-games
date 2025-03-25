@@ -17,6 +17,13 @@ public class ScratchCardAPI : MonoBehaviour
 
     public Reward[] rewards;
     public GameManager gameManager;
+    public string userIDfromAPI;
+    public static ScratchCardAPI instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
         StartCoroutine(GetAvailableRewards((List<Reward> fetchedRewards) =>
@@ -44,7 +51,7 @@ public class ScratchCardAPI : MonoBehaviour
     public void RewardPicked(int indexer)
     {
 
-        StartCoroutine(SubmitPrize(gameManager.currentUserID, rewards[indexer].id, (bool success) =>
+        StartCoroutine(SubmitPrize(userIDfromAPI, rewards[indexer].id, (bool success) =>
         {
             if (success)
             {
