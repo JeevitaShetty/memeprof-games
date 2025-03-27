@@ -76,11 +76,11 @@
     <Compile Include="Assets\_FortuneWheel\Scripts\DotLight.cs" />
     <Compile Include="Assets\ImageDisplay.cs" />
     <Compile Include="Assets\_FortuneWheel\Scripts\FortuneWheelConfig.cs" />
-    <Compile Include="Assets\ScratchCardAPI.cs" />
     <Compile Include="Assets\ScratchCard\Scripts\Core\ScratchCardRenderer.cs" />
     <Compile Include="Assets\Sci-Fi Tomb\Scripts\Gamecontroller.cs" />
     <Compile Include="Assets\_FortuneWheel\Scripts\SpinWheelAPI.cs" />
     <Compile Include="Assets\ForceLandscape.cs" />
+    <Compile Include="Assets\ScratchCard\Scripts\ScratchCardAPI.cs" />
     <Compile Include="Assets\ScratchCard\Scripts\EraseProgress.cs" />
     <Compile Include="Assets\ScratchCard\Demo\Scripts\ScratchDemoUI.cs" />
     <Compile Include="Assets\GameManager.cs" />

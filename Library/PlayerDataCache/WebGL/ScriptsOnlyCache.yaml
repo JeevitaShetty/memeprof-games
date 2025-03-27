@@ -85,6 +85,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Behaviour
     methodName: set_enabled
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: ScratchCardAPI
     methodName: RewardPicked
@@ -100,6 +103,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Behaviour
     methodName: set_enabled
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: ScratchCardAPI
     methodName: RewardPicked
@@ -121,6 +127,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Behaviour
     methodName: set_enabled
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: ScratchCardAPI
     methodName: RewardPicked
@@ -139,6 +148,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Behaviour
     methodName: set_enabled
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: ScratchCardAPI
     methodName: RewardPicked
@@ -213,8 +225,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5302}
     - Class: 114
-      Script: {instanceID: 5322}
-    - Class: 114
       Script: {instanceID: 5610}
     - Class: 114
       Script: {instanceID: 6086}
@@ -228,6 +238,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7130}
     - Class: 114
       Script: {instanceID: 7422}
+    - Class: 114
+      Script: {instanceID: 24062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -625,7 +637,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 1bd8fb3fbc0aae531e37f17a31dbd6cd
+      Hash: e62e9e34c692f44313063e3c1cf1a15f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
@@ -863,12 +875,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Text
-  - hash:
-      serializedVersion: 2
-      Hash: 3ed7f36cc5878bb89e6b3a1d24e203f5
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ScratchCardAPI
   - hash:
       serializedVersion: 2
       Hash: 6153b7be2df94044e8c0c197ae0c8dfb
@@ -1199,7 +1205,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f6342bd5f17fd61ac81769d899562ec3
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ScratchCardAPI
   platform: 20
   scenePathNames:
   - Assets/Scenes/Scratch_The_Card.unity
-  playerPath: C:/Users/dell1/OneDrive/Desktop/Builds/ScratchTheCard
+  playerPath: C:/Users/dell1/Desktop/Builds/ScratchTheCard_v4

@@ -334,7 +334,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 22b655193ce8ff844be639e0f1cec45f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -342,7 +342,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &101338645
@@ -855,10 +855,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1817357631}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.349, y: 0.164}
-  m_AnchorMax: {x: 0.51324993, y: 0.70061463}
-  m_AnchoredPosition: {x: -127.476204, y: -78.65912}
-  m_SizeDelta: {x: 193.81491, y: 286.94308}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -142.96, y: -74.52}
+  m_SizeDelta: {x: 233.48, y: 398.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223658323
 MonoBehaviour:
@@ -940,7 +940,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 299973210}
+      - m_Target: {fileID: 1817357630}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 299973212}
         m_TargetAssemblyTypeName: ScratchCardAPI, Assembly-CSharp
         m_MethodName: RewardPicked
         m_Mode: 3
@@ -1162,7 +1174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 299973211}
-  - component: {fileID: 299973210}
+  - component: {fileID: 299973212}
   m_Layer: 0
   m_Name: 'ScratchCardAPI '
   m_TagString: Untagged
@@ -1170,21 +1182,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &299973210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299973209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1a0aad3bbfe0e0478f8e9a2965910e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scratchCardGameId: 539fba2d-b095-4bf8-8769-e18672417f50
-  imageDisplay: {fileID: 1727364630}
-  rewards: []
 --- !u!4 &299973211
 Transform:
   m_ObjectHideFlags: 0
@@ -1200,6 +1197,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &299973212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299973209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a07b26b3b36b849944c746f9952ff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scratchCardGameId: 539fba2d-b095-4bf8-8769-e18672417f50
+  imageDisplay: {fileID: 1727364630}
+  rewards: []
+  gameManager: {fileID: 1675649003}
+  userIDfromAPI: 
+  isRunOnce: 0
 --- !u!1 &382565355
 GameObject:
   m_ObjectHideFlags: 0
@@ -2037,7 +2052,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2479,10 +2494,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1817357631}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.55675006, y: 0.18769272}
-  m_AnchorMax: {x: 0.7178125, y: 0.7276146}
-  m_AnchoredPosition: {x: 114.46821, y: -76.634544}
-  m_SizeDelta: {x: 197.22366, y: 294.1486}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 135.35, y: -66.94}
+  m_SizeDelta: {x: 235.93, y: 383.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &639185745
 MonoBehaviour:
@@ -2564,7 +2579,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 299973210}
+      - m_Target: {fileID: 1817357630}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 299973212}
         m_TargetAssemblyTypeName: ScratchCardAPI, Assembly-CSharp
         m_MethodName: RewardPicked
         m_Mode: 3
@@ -2574,7 +2601,7 @@ MonoBehaviour:
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1817357630}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -3472,7 +3499,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 22b655193ce8ff844be639e0f1cec45f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3480,7 +3507,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &812106186
@@ -3642,7 +3669,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 0254bcebccf96394b9df99bb88be0fc0, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3650,7 +3677,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &874936009
@@ -4526,10 +4553,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1817357631}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.14221875, y: 0.18769272}
-  m_AnchorMax: {x: 0.30900002, y: 0.7276146}
-  m_AnchoredPosition: {x: -393.78094, y: -80.37655}
-  m_SizeDelta: {x: 198.72188, y: 286.7016}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 213.95996, y: -95.81}
+  m_SizeDelta: {x: 254.55, y: 382.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1256193322
 MonoBehaviour:
@@ -4611,7 +4638,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 299973210}
+      - m_Target: {fileID: 1817357630}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 299973212}
         m_TargetAssemblyTypeName: ScratchCardAPI, Assembly-CSharp
         m_MethodName: RewardPicked
         m_Mode: 3
@@ -5113,10 +5152,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1817357631}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7475625, y: 0.164}
-  m_AnchorMax: {x: 0.9233438, y: 0.75000006}
-  m_AnchoredPosition: {x: 349.631, y: -76.4762}
-  m_SizeDelta: {x: 196.59187, y: 291.2338}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -229.81006, y: -74.51999}
+  m_SizeDelta: {x: 243.65, y: 398.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1465822311
 MonoBehaviour:
@@ -5198,7 +5237,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 299973210}
+      - m_Target: {fileID: 1817357630}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 299973212}
         m_TargetAssemblyTypeName: ScratchCardAPI, Assembly-CSharp
         m_MethodName: RewardPicked
         m_Mode: 3
@@ -5208,7 +5259,7 @@ MonoBehaviour:
           m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1817357630}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -5735,6 +5786,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 379729d194651fa439caa86b4df920ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentUserID: 
+  runOnce: 0
 --- !u!4 &1675649004
 Transform:
   m_ObjectHideFlags: 0
@@ -6127,10 +6180,10 @@ RectTransform:
   - {fileID: 1465822310}
   m_Father: {fileID: 577993658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1818234092
 GameObject:
@@ -6413,7 +6466,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: dd857fce3ff085a4b9b8687e03a9b4cd, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6421,7 +6474,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2046487647
